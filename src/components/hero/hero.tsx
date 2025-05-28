@@ -21,12 +21,12 @@ const Hero: React.FC = () => {
                 <div className="h-10 border-l border-gray-400"></div>
 
                 <nav className="flex items-center space-x-6 text-sm text-gray-700">
-                    <Link href="/" className="text-pink-600 font-poppins text-[16px]">Home</Link>
-                    <Link href="#quem-somos" className="hover:text-pink-600 font-poppins text-[16px]">Quem somos</Link>
-                    <Link href="#servicos" className="hover:text-pink-600 font-poppins text-[16px]">Nossos serviços</Link>
-                    <Link href="#como-funciona" className="hover:text-pink-600 text-[16px]">Como funciona</Link>
-                    <Link href="#depoimentos" className="hover:text-pink-600 text-[16px]">Depoimentos</Link>
-                    <Link href="#faq" className="hover:text-pink-600 font-poppins text-[16px]">FAQ's</Link>
+                    <Link href="/" className="text-pink-600 text-[16px]">Home</Link>
+                    <Link href="#quem-somos" className="hover:text-pink-600 font-Poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>Quem somos</Link>
+                    <Link href="#servicos" className="hover:text-pink-600 font-poppins text-[16px]"style={{ fontFamily: 'Poppins' }} >Nossos serviços</Link>
+                    <Link href="#como-funciona" className="hover:text-pink-600 text-[16px]" style={{ fontFamily: 'Poppins' }} >Como funciona</Link>
+                    <Link href="#depoimentos" className="hover:text-pink-600 text-[16px]" style={{ fontFamily: 'Poppins' }}>Depoimentos</Link>
+                    <Link href="#faq" className="hover:text-pink-600 font-poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>FAQ's</Link>
                 </nav>
             </div>
 
@@ -40,11 +40,23 @@ const Hero: React.FC = () => {
         </div>
         </header>
 
-        <div className='flex flex-col items-center justify-center text-center px-4 mt-10'>
-            <h1 className='text-[22px]'>Descubra uma nova rotina de beleza personalizada</h1>
-            <h1 className='text-[36px]'>Transforme Seu Cuidado Pessoal <br /> com Inteligência Digital</h1>
-            <p className='text-[16px] text-gray-700'>O Kandala analisa suas necessidades individuais e oferece <br /> recomendações personalizadas de produtos, rotinas e dicas profissionais.</p>
+        <div className={`flex flex-col items-center justify-center text-center px-4 mt-10`}>
+            <h1 className="text-[26px] text-pink-600" style={{ fontFamily: 'Signatie' }}>
+                Descubra uma nova rotina de beleza personalizada
+            </h1>
+            <h2 className="text-[56px] text-black" style={{ fontFamily: 'Miollan' }}>
+                Transforme Seu Cuidado Pessoal <br /> com Inteligência Digital
+            </h2>
+            <p
+                className="text-[16px] text-black font-poppins leading-tight"
+                style={{ fontFamily: 'Poppins' }}
+                >
+                O Kandala analisa suas necessidades individuais e oferece <br />
+                recomendações personalizadas de produtos, rotinas e dicas profissionais.
+            </p>
+
         </div>
+
 
         <div className="relative max-w-[1115px] mx-auto flex items-center justify-between mt-[40px]">
 

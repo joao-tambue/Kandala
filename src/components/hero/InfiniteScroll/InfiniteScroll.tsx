@@ -17,7 +17,6 @@ const images = [
   '/icons/10.png',
   '/icons/11.png',
   '/icons/12.png',
-  // adicione quantas quiser
 ];
 
 export default function InfiniteScroll() {

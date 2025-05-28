@@ -122,3 +122,24 @@
      
   }
 }
+
+@font-face {
+  font-family: 'Signatie';
+  src: url('/fonts/Signatie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miollan';
+  src: url('/fonts/Miollan.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Light.ttf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

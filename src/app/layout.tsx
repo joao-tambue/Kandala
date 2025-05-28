@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import localFont from "next/font/local";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Google Fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -12,26 +10,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"], // ajusta os pesos que quiser usar
-  display: "swap",
-});
-
-// Local Fonts (tu precisa colocar os arquivos dentro de /app/fonts)
-const signatie = localFont({
-  src: "./fonts/Signatie.ttf",
-  variable: "--font-signatie",
-  display: "swap",
-});
-
-const miollan = localFont({
-  src: "./fonts/Miollan.ttf",
-  variable: "--font-miollan",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${signatie.variable} ${miollan.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="antialiased">{children}</body>
     </html>
