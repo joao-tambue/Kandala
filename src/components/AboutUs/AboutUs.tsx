@@ -12,24 +12,26 @@ export default function AboutUs() {
 
   const toggleText = () => setIsExpanded((prev) => !prev);
 
-  const shortText = `Somos mais do que uma aplicação de beleza — somos a sua parceira para realçar o que há de melhor em você. Com uma plataforma intuitiva,
-  conectamos você a profissionais de confiança, oferecendo serviços personalizados que se encaixam na sua rotina.`;
+  const shortText = ``;
 
   const moreInfo = `Seja para um momento de cuidado ou uma transformação completa,
-  estamos aqui para tornar cada experiência única, prática e inesquecível. Com uma plataforma intuitiva,
-  conectamos você a profissionais de confiança, oferecendo serviços personalizados que se encaixam na sua rotina.`;
+  estamos aqui para tornar cada experiência única, prática e inesquecível. Com uma plataforma intuitiva.`;
 
   return (
-    <div className='flex items-center gap-8 mt-[60px] w-[1250px] mx-auto max-md:flex-col max-md:w-full px-4'>
-      <Image src={img} alt="About Us" className="w-full h-auto object-cover max-w-[500px]" />
-      <div className="flex flex-col gap-4">
-        <h1 className="text-[20px] font-medium text-gray-700">Quem somos</h1>
-        <h2 className='font-semibold text-[26px]'>
+    <div className='flex items-center justify-center mx-auto mt-22'>
+      <Image src={img} alt="About Us" className="border rounded-2xl w-[650px] h-[531px] object-cover" />
+      <div className="flex flex-col gap-4 w-[630px] px-6">
+        <h1 className="text-[26px] text-pink-600 font-medium" style={{ fontFamily: 'Signatie' }}>Quem somos</h1>
+        <h2 className='font-bold text-[26px] text-[#402A25]' style={{ fontFamily: 'Poppins' }}>
           Descubra a beleza que transforma! Nossa aplicação conecta você aos melhores serviços de beleza, com praticidade e estilo.
         </h2>
 
-        <p className="text-[18px] text-gray-500 font-normal">
-          {shortText}
+        <p className="text-[16px] w-[630px] text-black font-sans font-light leading-8 ">
+          Somos mais do que uma aplicação de beleza — somos a sua parceira para <br /> realçar o que há 
+          de melhor em você. Com uma plataforma intuitiva, conectamos <br /> você a profissionais de
+          confiança, oferecendo serviços personalizados que se <br /> encaixam na sua rotina. Seja para um
+           momento de cuidado ou uma <br /> transformação completa, estamos aqui para tornar cada experiência
+            única, <br /> prática e inesquecível.
         </p>
 
         <AnimatePresence>
@@ -41,7 +43,7 @@ export default function AboutUs() {
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[18px] text-gray-500 font-normal">
+              <p className="text-[16px] w-[630px] text-black font-sans font-light leading-8">
                 {moreInfo}
               </p>
             </motion.div>

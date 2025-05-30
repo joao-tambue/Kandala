@@ -34,9 +34,9 @@ export default function InfiniteScroll() {
   }, [controls]);
 
   return (
-    <div className="overflow-hidden bg-[#3c2a24] py-2">
+    <div className="overflow-hidden bg-[#3c2a24] py-4 -mt-6 relative z-30">
       <motion.div
-        className="flex gap-2 w-max"
+        className="flex gap-3 w-max"
         animate={controls}
       >
         {[...images, ...images].map((src, i) => (

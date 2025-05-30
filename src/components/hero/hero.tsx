@@ -14,19 +14,19 @@ import InfiniteScroll from './InfiniteScroll/InfiniteScroll';
 
 const Hero: React.FC = () => {
   return (
-    <div>
-        <header className="w-full flex items-center justify-between px-8 py-4">
+    <div className=''>
+        <header className="w-[1376px] mx-auto flex items-center justify-between px-8 py-4">
             <div className='flex justify-center items-center gap-4'>
                 <Image src={logo} alt='logo' />
-                <div className="h-10 border-l border-gray-400"></div>
+                <div className="h-[20px] border-l border-gray-400"></div>
 
                 <nav className="flex items-center space-x-6 text-sm text-gray-700">
                     <Link href="/" className="text-pink-600 text-[16px]">Home</Link>
-                    <Link href="#quem-somos" className="hover:text-pink-600 font-Poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>Quem somos</Link>
-                    <Link href="#servicos" className="hover:text-pink-600 font-poppins text-[16px]"style={{ fontFamily: 'Poppins' }} >Nossos serviços</Link>
-                    <Link href="#como-funciona" className="hover:text-pink-600 text-[16px]" style={{ fontFamily: 'Poppins' }} >Como funciona</Link>
-                    <Link href="#depoimentos" className="hover:text-pink-600 text-[16px]" style={{ fontFamily: 'Poppins' }}>Depoimentos</Link>
-                    <Link href="#faq" className="hover:text-pink-600 font-poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>FAQ's</Link>
+                    <Link href="#quem-somos" className="text-[#402A25] font-Poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>Quem somos</Link>
+                    <Link href="#servicos" className="text-[#402A25] font-poppins text-[16px]"style={{ fontFamily: 'Poppins' }} >Nossos serviços</Link>
+                    <Link href="#como-funciona" className="text-[#402A25] text-[16px]" style={{ fontFamily: 'Poppins' }} >Como funciona</Link>
+                    <Link href="#depoimentos" className="text-[#402A25] text-[16px]" style={{ fontFamily: 'Poppins' }}>Depoimentos</Link>
+                    <Link href="#faq" className=" text-[#402A25] font-poppins text-[16px]" style={{ fontFamily: 'Poppins' }}>FAQ's</Link>
                 </nav>
             </div>
 
@@ -40,15 +40,15 @@ const Hero: React.FC = () => {
         </div>
         </header>
 
-        <div className={`flex flex-col items-center justify-center text-center px-4 mt-10`}>
+        <div className={`flex flex-col gap-2 items-center justify-center text-center px-4 mt-10`}>
             <h1 className="text-[26px] text-pink-600" style={{ fontFamily: 'Signatie' }}>
                 Descubra uma nova rotina de beleza personalizada
             </h1>
-            <h2 className="text-[56px] text-black" style={{ fontFamily: 'Miollan' }}>
+            <h2 className="text-[56px] mt-3 leading-none text-black" style={{ fontFamily: 'Miollan' }}>
                 Transforme Seu Cuidado Pessoal <br /> com Inteligência Digital
             </h2>
             <p
-                className="text-[16px] text-black font-poppins leading-tight"
+                className="text-[16px] text-black font-poppins leading-6"
                 style={{ fontFamily: 'Poppins' }}
                 >
                 O Kandala analisa suas necessidades individuais e oferece <br />
@@ -58,10 +58,10 @@ const Hero: React.FC = () => {
         </div>
 
 
-        <div className="relative max-w-[1115px] mx-auto flex items-center justify-between mt-[40px]">
+        <div className="relative w-[1118px] mx-auto flex items-center justify-between mt-[40px]">
 
-            <div className="flex flex-col">
-            <Image src={img2} alt="img1" className='z-10' />
+            <div className="flex flex-col -mt-24">
+            <Image src={img2} alt="img1" className='z-10 w-[255px] h-[286px]' />
             <Image src={img1} alt="img2" className="rotate-[4deg] -mt-[15px]" />
             <Image src={img2} alt="img3" className="rotate-[7deg] -mt-[30px]" />
             </div>
@@ -71,13 +71,13 @@ const Hero: React.FC = () => {
                     <Image src={googleplaystore} alt="Google Play" />
                     <Image src={appstore} alt="App Store" />
                 </div>
-                <div className="relative z-10">
-                <Image src={mobile} alt="App mockup" className="object-contain mt-[60px]" />
+                <div className="">
+                <Image src={mobile} alt="App mockup" className="object-contain mt-[60px] w-[434px]" />
                 </div>
             </div>
 
-            <div className="flex flex-col">
-            <Image src={img3} alt="img4" className="rotate-[6deg]" />
+            <div className="flex flex-col -mt-24">
+            <Image src={img3} alt="img4" className="rotate-[3deg] " />
             <Image src={img4} alt="img5" className="rotate-[-1deg] z-10" />
             <Image src={img3} alt="img6" className="rotate-[3deg] -mt-[90px]" />
             </div>
